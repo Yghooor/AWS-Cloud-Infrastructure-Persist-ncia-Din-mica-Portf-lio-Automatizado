@@ -49,13 +49,11 @@ A Landing Page foi executada de forma 100% automatizada no primeiro boot da inst
 
 ![Landing Page Portfólio](capturas/Web%20page.png)
 
-### ⚙️ 2. Console AWS: Discos Conectados à Instância (EC2 Storage)
-Evidência real extraída da aba de armazenamento da instância executada. O Terraform mapeou com sucesso o volume raiz do sistema e acoplou dinamicamente o volume complementar em `/dev/sdh`.
+### ⚙️ 2. Console AWS: Instância EC2
 
 ![Aba Storage da EC2](capturas/EC2.png)
 
 ### 💾 3. Console AWS: Painel de Volumes Persistentes (EBS)
-Validação isolada do volume EBS persistente de última geração (`gp3`) criado a partir de variáveis dinâmicas e atachado de forma íntegra.
 
 ![Painel de Volumes EBS](capturas/EBS.png)
 
@@ -64,8 +62,9 @@ Validação isolada do volume EBS persistente de última geração (`gp3`) criad
 ## 🧹 Destruição de Recursos (Cost Control)
 
 Para limpar o ambiente de testes na nuvem e evitar custos desnecessários no Free Tier da AWS, o comando de encerramento foi executado com sucesso:
-```powershell
-'terraform destroy -auto-approve''
+``powershell
+terraform destroy -auto-approve
+
 ---
 
 ## 🚀 Como Rodar o Projeto
