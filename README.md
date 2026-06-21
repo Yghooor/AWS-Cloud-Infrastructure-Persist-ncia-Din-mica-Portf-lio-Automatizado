@@ -62,8 +62,8 @@ A Landing Page foi executada de forma 100% automatizada no primeiro boot da inst
 ## 🧹 Destruição de Recursos (Cost Control)
 
 Para limpar o ambiente de testes na nuvem e evitar custos desnecessários no Free Tier da AWS, o comando de encerramento foi executado com sucesso:
-    ```powershell
-terraform destroy -auto-approve
+     ```powershell
+            terraform destroy -auto-approve
 
 ---
 
